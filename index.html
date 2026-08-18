@@ -20,12 +20,63 @@
 	<main class="izkartojums">
 		<section class="sadala">
 			<h2>Konteineru saraksts</h2>
-			<table>...</table>
+			<table>
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Minerāls</th>
+						<th>Izcelsmes bāze</th>
+						<th>Galamērķa Bāze</th>
+						<th>Statuss</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>SC-1023</td>
+						<td>Titānīts</td>
+						<td>Titāns</td>
+						<td>Mēness</td>
+						<td>Ceļā</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>DC-1023</td>
+						<td>Litijs</td>
+						<td>Zeme</td>
+						<td>Marss</td>
+						<td>Noliktavā</td>
+					</tr>
+				</tbody>
+  			</table>
 		</section>
 
 		<section class="sadala">
 			<h2>Pievienot konteineru</h2>
-			<form>...</form>
+			<form>
+				<label for="lID">ID:</label><br>
+				<input type="text" id="lID" name="lID" value="ZZ-9987"><br>
+			  
+				<label for="lmineral">Minerāls:</label><br>
+				<input type="text" id="lmineral" name="lmineral" value="Broms"><br>
+			  
+				<label for="lorigin_base">Izcelšanās bāze:</label><br>
+				<input type="text" id="lorigin_base" name="lorigin_base" value="Mēness 2"><br>
+			  
+				<label for="ldestination">Galamērķa bāze:</label><br>
+				<input type="text" id="ldestination" name="ldestination" value="Zeme_Latvija_1"><br>
+			  
+				<label for="lstatus">Statuss:</label><br>
+				<select id="lstatus" name="lstatus">
+					<option value="none">---</option>
+					<option value="on_way">Ceļā</option>
+					<option value="at_wearhouse">Noliktavā</option>
+					<option value="delivered">Piegādāts</option>
+				</select>
+  
+				<input type="submit" value="Saglabāt">
+			</form>
 		</section>
 	</main>
 
