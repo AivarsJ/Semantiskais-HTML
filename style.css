@@ -1,0 +1,26 @@
+/* CSS */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.izkartojums {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.sadala {
+  flex: 1;             /* katra sadaļa aizņem vienādu vietu */
+  min-width: 280px;    /* mazākais platums pirms pāriet jaunā rindā */
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+}
